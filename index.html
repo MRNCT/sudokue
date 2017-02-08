@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <puzzle v-bind:squares="squares" v-bind:original="original"></puzzle>
+      <button v-on:click="solvePuzzle">Solve</button>
+      <p>{{ message }}</p>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
